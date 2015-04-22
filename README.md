@@ -24,6 +24,12 @@ Here is one way to build EOS in the source directory. From a directory of your c
 ~% make -j4
 ```
 
+Note that on Ubuntu, you also need to install `autoconf`. So instead of the `yum` line above, please do:
+
+```bash
+~% sudo apt-get install autoconf libhdf5-dev libgsl0-dev
+```
+
 # Documentation
 
 All classes are documented with Doxygen. The documentation can be generated from the top directory with
