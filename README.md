@@ -30,6 +30,11 @@ Note that on Ubuntu, you also need to install `autoconf`. So instead of the `yum
 ~% sudo apt-get install autoconf libhdf5-dev libgsl0-dev
 ```
 
+Again on Ubuntu, the execution of the programs in `src/clients` will fail because they will not find the Minuit libraries. This is quickly fixed with
+```bash
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+```
+
 # Documentation
 
 All classes are documented with Doxygen. The documentation can be generated from the top directory with
